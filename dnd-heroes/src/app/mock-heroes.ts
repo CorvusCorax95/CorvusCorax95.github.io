@@ -7,5 +7,4 @@ export const HEROES: Hero[] = [
 { id: 103, name: 'Sophie', class: 'Fighter', race: 'Human', armour: 12 },
 { id: 104, name: 'Barthran', class: 'Monk', race: 'Dwarf', armour: 18 },
 { id: 105, name: 'Fordal Bellarys', class: 'Bard', race: 'Dragonborn', armour: 16 }
-
 ]

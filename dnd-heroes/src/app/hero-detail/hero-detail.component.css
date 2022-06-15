@@ -5,14 +5,25 @@ label {
 }
 input {
   font-size: 1em;
-  padding: .5rem;
+  padding: .5rem; /*free space inside input box*/
+  margin: 5px; /*distance to next object*/
+  align-items: grid;
 }
-/*GO BACK BUTTON*/
-button {
-  margin-top: 20px;
+
+.go-back {
+  margin-top: 5px;
   background-color: rgb(203, 203, 203);
   color: black;
-  padding: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.save {
+  margin-top: 5px;
+  background-color: rgb(203, 203, 203);
+  color: black;
+  padding: 10px;
   border-radius: 4px;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;

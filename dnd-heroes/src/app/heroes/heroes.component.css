@@ -2,7 +2,7 @@
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
-  padding: 0;
+  padding: 0; /* no margin to left edge of window*/
   width: 15em;
 }
 .heroes li {
@@ -13,11 +13,18 @@
 .heroes li:hover {
   left: .1em;
 }
-
+.add-button {
+  border: none;
+  padding: 5px 5px;
+  background: rgb(209, 208, 208);
+  margin: 10px; /* distance button from input field*/
+  display: inline-block;
+  font-size: 14px;
+}
 .heroes a {
   color: #333;
   text-decoration: none;
-  background-color: #EEE;
+  background-color: rgb(188, 188, 188);
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -28,7 +35,7 @@
 
 .heroes a:hover {
   color: #2c3a41;
-  background-color: #e6e6e6;
+  background-color: #adadad;
 }
 
 .heroes a:active {
@@ -52,3 +59,13 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+.delete {
+  border: none;
+  padding: 5px 5px;
+  background: rgb(209, 208, 208);
+  display: inline-block;
+  font-size: 14px;
+}
+
+

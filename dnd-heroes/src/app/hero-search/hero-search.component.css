@@ -1,0 +1,15 @@
+label{
+  background-color: slategray;
+  margin: 10px;
+  font-size: 20px;
+}
+
+input{
+  background: white;
+  margin: 5px;
+}
+
+.container{
+  padding: 1%;
+  background-color: slategray;
+}

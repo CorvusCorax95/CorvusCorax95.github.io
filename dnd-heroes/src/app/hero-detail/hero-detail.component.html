@@ -1,22 +1,44 @@
 
 <div *ngIf="hero">
 
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id:</span>{{hero.id}}</div>
+<h2>{{hero.name | uppercase}} Details</h2>
+<div><span>id:</span>{{hero.id}}</div>
   <div>
       <label for="hero-name">Hero name: </label>
       <input id="hero-id" [(ngModel)]="hero.name" placeholder="name">
   </div>
 
+
   <div>
-    Class: {{hero.class}}
+    <label for="hero.class">Class: </label>
+    <input id="hero-id" [(ngModel)]="hero.class" placeholder="class">
   </div>
+
   <div>
-    <span> race:</span>{{hero.race}}
+    <label for="hero.race">Race: </label>
+    <input id="hero-id" [(ngModel)]="hero.race" placeholder="race">
   </div>
+
   <div>
-    <span> armour: </span>{{hero.armour}}
+    <label for="hero.armour">Armour: </label>
+    <input id="hero-id" [(ngModel)]="hero.armour" placeholder="armour">
   </div>
 </div>
 
-<button type="button" (click)="goBack()">go back</button>
+<select race="Race">
+  <option>Dragonborn</option>
+  <option>Dwarf</option>
+  <option>Elf</option>
+  <option>Gnome</option>
+  <option>Half-Elf</option>
+  <option>Half-Orc</option>
+  <option>Halfling</option>
+  <option>Human</option>
+  <option>Tiefling</option>
+  <option>Genasi</option>
+  <option>Changeling</option>
+  <option>Tabaxi</option>
+</select>
+
+<button type="button" class="save" (click)="save()">save</button>
+<button type="button" class="go-back" (click)="goBack()">go back</button>
