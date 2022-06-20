@@ -1,44 +1,57 @@
-
 <div *ngIf="hero">
 
 <h2>{{hero.name | uppercase}} Details</h2>
 <div><span>id:</span>{{hero.id}}</div>
   <div>
       <label for="hero-name">Hero name: </label>
-      <input id="hero-id" [(ngModel)]="hero.name" placeholder="name">
+      <input id="hero-id" pInputText [(ngModel)]="hero.name" placeholder="name">
   </div>
 
 
   <div>
     <label for="hero.class">Class: </label>
-    <input id="hero-id" [(ngModel)]="hero.class" placeholder="class">
-  </div>
+    <select id="hero-id" [(ngModel)]="hero.class" placeholder="class">
+      <option selected>{{hero.class}}</option>
+      <option>Barbarian</option>
+      <option>Bard</option>
+      <option>Cleric</option>
+      <option>Druid</option>
+      <option>Fighter</option>
+      <option>Monk</option>
+      <option>Paladin</option>
+      <option>Ranger</option>
+      <option>Rouge</option>
+      <option>Sorcerer</option>
+      <option>Warlock</option>
+      <option>Wizard</option>
+    </select>
+    </div>
 
   <div>
     <label for="hero.race">Race: </label>
-    <input id="hero-id" [(ngModel)]="hero.race" placeholder="race">
+    <select id="hero-id" [(ngModel)]="hero.race"  placeholder="race">
+      <option selected>{{hero.race}}</option>
+      <option>Dragonborn</option>
+      <option>Dwarf</option>
+      <option>Elf</option>
+      <option>Gnome</option>
+      <option>Half-Elf</option>
+      <option>Half-Orc</option>
+      <option>Halfling</option>
+      <option>Human</option>
+      <option>Tiefling</option>
+      <option>Genasi</option>
+      <option>Changeling</option>
+      <option>Tabaxi</option>
+    </select>
   </div>
 
   <div>
     <label for="hero.armour">Armour: </label>
-    <input id="hero-id" [(ngModel)]="hero.armour" placeholder="armour">
+    <input id="hero-id" [(ngModel)]="hero.armour" placeholder="armour"
+    type="number" min="0" max="40">
   </div>
 </div>
-
-<select race="Race">
-  <option>Dragonborn</option>
-  <option>Dwarf</option>
-  <option>Elf</option>
-  <option>Gnome</option>
-  <option>Half-Elf</option>
-  <option>Half-Orc</option>
-  <option>Halfling</option>
-  <option>Human</option>
-  <option>Tiefling</option>
-  <option>Genasi</option>
-  <option>Changeling</option>
-  <option>Tabaxi</option>
-</select>
 
 <button type="button" class="save" (click)="save()">save</button>
 <button type="button" class="go-back" (click)="goBack()">go back</button>

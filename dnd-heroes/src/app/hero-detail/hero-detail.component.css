@@ -3,7 +3,7 @@ label {
   color: #435960;
   font-weight: bold;
 }
-input {
+select, input {
   font-size: 1em;
   padding: .5rem; /*free space inside input box*/
   margin: 5px; /*distance to next object*/
